@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/utilities.css">
+
+  <title>Deli | Log in </title>
+</head>
+
+<body id="login">
+  <header class="login-page">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Deli Help</span>App
+      </h1>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          Menu <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#login">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-login">
+      <div class="login-image">
+        <img src="/IMG/designercake.jpg" alt="designercake">
+      </div>
+      <div class="login">
+        <form action="#">
+          <div class="login-header">
+            <div class="title">
+              <h1><span><i class="fas fa-book-open"></i> Deli HelpApp</span> Log In</h1>
+            </div>
+          </div>
+          <div class="input-login">
+            <div class="input-box-login">
+              <label for="username"><i class="fas fa-user"></i> USER NAME</label>
+              <input id="name" type="text" name="username" placeholder="User Name" required>
+            </div>
+
+            <div class="input-box-login">
+              <label for="email"><i class="fas fa-envelope"></i> EMAIL</label>
+              <input id="email" type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box-login">
+              <label for="password"><i class="fas fa-lock"></i> PASSWORD</label>
+              <input id="PASSWORD" type="password" name="PASSWORD" placeholder="Password" required>
+            </div>
+
+            <div class="check-login">
+              <div class="check-input-login">
+                <input type="checkbox" id="rememberme" name="rememberme" checked>
+                <label for="rememberme">REMEMBER ME</label>
+              </div>
+
+              <div class="forgot-input">
+                <label for="forgot password?">Forgot Password?</label>
+              </div>
+            </div>
+
+          </div>
+          <div class="login-button">
+            <button><a href="#">LOG IN</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022 DeliHelpApp</p>
+  </footer>
+  <script src="/js/structure.js"></script>
+</body>
+
+</html>

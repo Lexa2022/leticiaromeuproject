@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/utilities.css">
+  <title>Deli | HOME </title>
+</head>
+
+<body id="home">
+  <header class="hero">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Deli Help</span>App
+      </h1>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/books.html">Books</a></li>
+          <li><a href="/pages/antiallergen.html">Anti Allergen</a></li>
+          <li><a href="/pages/report.html">Reports</a></li>
+          <li><a href="/pages/signup.html">Sign Up</a></li>
+          <li><a href="/pages/login.html">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="page" class="content">
+      <h1>Welcome to Deli Help App</h1>
+      <p>It is a pleasure to help you dear employee! Scroll down and find out how it can help you.</p>
+      <a href="login.html" class="btn"><i class="fas fa-chevron-right"></i>
+        Log In</a>
+    </div>
+  </header>
+  <!--cases-->
+  <section id="cases" class="cases flex-grid section-padding">
+    <header class="section-header">
+      <h2>Deli Procedures</h2>
+      <h4>what this App can do? </h4>
+    </header>
+    <div class="row">
+      <div class="column">
+        <!--<img th:src="@{/images/custservice.jpeg}" alt="customer service">-->
+        <img src="/IMG/custservice.jpeg" alt="customer service">
+      </div>
+      <div class="column">
+        <!--<img th:src="@{/images/writebooks.jpg}" alt="books">-->
+        <img src="/IMG/writebooks.jpg" alt="books">
+      </div>
+      <div class="column">
+        <!--<img th:src="@{/images/baking.jpg}" alt="baking procedurs">-->
+        <img src="/IMG/adm.jpg" alt="adm">
+      </div>
+      <div class="column">
+        <!--<img th:src="@{/images/antiallergen.jpg}" alt="anti allergen">-->
+        <img src="/IMG/antiallergen.jpg" alt="anti allergen">
+      </div>
+    </div>
+  </section>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022 DeliHelpApp</p>
+  </footer>
+  <!--<script type="text/javascript" th:src="@{/js/style.js}"></script>-->
+  <script type="text/javascript" src="/JS/structure.js"></script>
+</body>
+
+</html>

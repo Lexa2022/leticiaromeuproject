@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+::-webkit-input-placeholder {
+  color: #898a8b;
+  font-weight: 300;
+}
+
+/*BOOKS, LOGIN AND SIGNUP PAGE*/
+.books-page,
+.signup-page,
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(60deg, rgb(130, 51, 74) 3%, rgb(216, 148, 161) 80%);
+}
+
+.container-books,
+.container-signup,
+.container-login {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+
+}
+
+.form-image,
+.signup-image,
+.login-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form-image,
+.signup-image,
+.login-image,
+img {
+  width: 35rem;
+}
+
+/*books page second column set*/
+.form,
+.signup,
+.login {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: linear-gradient(60deg, rgb(130, 51, 74) 3%, rgb(216, 148, 161) 80%);
+  padding: 3rem;
+}
+
+/*books page logo text*/
+.form-header,
+.signup-header,
+.login-header {
+  margin-bottom: 4rem;
+  display: flex;
+  color: #f4f4f4;
+}
+
+.form-header,
+.signup-header,
+.login-header,
+span {
+  color: black;
+  font-weight: 1000;
+}
+
+.form-header,
+.signup-header,
+.login-header,
+h1 {
+  color: #f4f4f4;
+  font-weight: 1000;
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #813;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.signup-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #813;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.login-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #813;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/*BOOKS PAGE BOXES*/
+.input-box,
+.input-box-signup,
+.input-box-login {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+/*text books page setting ATENCAO CAIXA QUE FAZ O CONTORNO ENTRE AS CAIXAS BRANCAS*/
+.input-box input {
+  /*campo responsavel pelo tamanho das caixas brancas*/
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+/*campo responsavel pelo tamanho das caixas brancas*/
+.input-box-signup input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box-login input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+  background-color: #e5b0c2;
+}
+
+.input-box-signup input:hover {
+  background-color: #e5b0c2;
+}
+
+.input-box-login input:hover {
+  background-color: #e5b0c2;
+}
+
+
+/*campo responsavel pela borda ao redor das caixas*/
+.input-box input:focus-visible {
+  outline: 1px solid #813;
+}
+
+.input-box-signup input:focus-visible {
+  outline: 1px solid #813;
+}
+
+.input-box-login input:focus-visible {
+  outline: 1px solid #813;
+}
+
+.input-box,
+.input-box-signup,
+.input-box-login,
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+
+.check-signup,
+.check-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.check-signup label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #f4f4f4;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+.check-login label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #f4f4f4;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.forgot-input label {
+  color: rgb(96, 12, 36);
+  cursor: pointer;
+}
+
+
+.continue-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #813;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #813;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #813;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover {
+  background-color: rgb(179, 31, 73);
+}
+
+.signup-button button:hover {
+  background-color: rgb(179, 31, 73);
+}
+
+.login-button button:hover {
+  background-color: rgb(179, 31, 73);
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #f4f4f4;
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #f4f4f4;
+}
+
+.signup-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #f4f4f4;
+}
+
+
+/*HOME PAGE SETTING*/
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* IMAGES SETTINGS*/
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Text colors*/
+.text-primary {
+  color: #000;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+/*Hamburguer button*/
+#btn-mobile {
+  display: none;
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #813;
+  color: #fff;
+  opacity: 0.8;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a:hover {
+  border-bottom: #813a53 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 1000;
+}
+
+/*Header home page*/
+.hero {
+  background: url(/IMG/delibreads.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+/*ANTI ALLERGEN PAGE SETTING*/
+.anti {
+  background: url(/IMG/antiallergenapi.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.form .form-search {
+  border: 1px solid #813;
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+
+.form-search input,
+form button {
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  border: none;
+  padding: 0.2em;
+}
+
+form button {
+  cursor: pointer;
+  background: none;
+  color: whitesmoke;
+}
+
+form button:hover {
+  background-color: #813;
+}
+
+
+/*Header REPORT page*/
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #813;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/*lOGIN PAGE SETTING*/
+.btn-primary,
+.bg-primary {
+
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: #c506df;
+  color: #fff;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #813;
+  color: #fff;
+}
+
+.btn-light,
+.bg-light {
+  background: linear-gradient(60deg, rgb(130, 51, 74) 3%, rgb(216, 148, 161) 80%);
+  color: #333;
+}
+
+.btn-outline {
+  border: 1px solid #813;
+}
+
+
+/*Flex Items*/
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items>div {
+  padding: 10px;
+}
+
+/*Flex columns Log in*/
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+  margin-top: 70px;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 300px;
+  /*controla a distancia das caixas de login coluna 2*/
+
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+
+
+/*Section Header, text centering*/
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/*Flex grid*/
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 50%;
+  max-width: 100%;
+  padding: 5px;
+}
+
+/*Image main position home page*/
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+/*Icons*/
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #813a53;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.cases img:hover {
+  opacity: 0.9;
+}
+
+/*LOGIN PAGE SETTING*/
+.logo-login {
+  font-size: 200%;
+  color: #f4f4f4;
+  font-weight: 1000;
+}
+
+.login-form {
+  width: 100%;
+  padding: 20px 0;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.logo-login span {
+  color: black;
+  font-weight: 1000;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form .login-control {
+  margin: 15px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+  border-radius: 5px;
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.login-form i {
+  position: absolute;
+  left: 20px;
+  color: #858585;
+  padding: 9px 8px;
+  width: 33px;
+  height: 33px;
+}
+
+.login-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/*Para que a borda da caixa do form mude de cor*/
+
+.login-form input:focus {
+  outline-color: #813a53;
+}
+
+::-webkit-input-placeholder {
+  color: #898a8b;
+  font-weight: 300;
+}
+
+/*FOOTER*/
+.footer {
+  background: #813;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 4px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #cb8ea2;
+}
+
+/*Footer text*/
+.footer .social>* {
+  margin-right: 30px;
+}
+
+/*Page Colors*/
+#page-1 {
+  background: linear-gradient(135deg, #05073a, #dc0606ca);
+  --animate-speed: 2s;
+}
+
+#page-2 {
+  background: #ca678a;
+}
+
+#page-3 {
+  background: #dc8da9;
+}
+
+#page-4 {
+  background: linear-gradient(135deg, #8487e2, #e06767ca);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+  font-weight: 1000;
+}
+
+.page p {
+  font-size: 2rem;
+  color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.button-report {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: rgb(75, 13, 31);
+  color: #f4f4f4;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+
+}
+
+.button-report:hover,
+.button-report-dark {
+  background: #813;
+  color: #fff;
+  /*transicao da cor do botao*/
+}
+
+
+/*Page Animation*/
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translatex(-1800px);
+  animation: text var(--animate-speed) forwards ease-in 1s;
+}

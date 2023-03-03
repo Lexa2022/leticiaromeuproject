@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/utilities.css">
+
+  <title>Deli | Books </title>
+</head>
+
+<body id="books">
+  <header class="books-page">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Deli Help</span>App
+      </h1>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          Menu <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="/pages/books.html">Books</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/antiallergen.html">Anti Allergen</a></li>
+          <li><a href="/pages/report.html">Reports</a></li>
+          <li><a href="/pages/signup.html">Sign Up</a></li>
+          <li><a href="/pages/login.html">Log Out</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-books">
+      <div class="form-image">
+        <img src="/img/writebooks.jpg" alt="booksphoto">
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="input-group">
+            <div class="input-box">
+              <label for="date">DATE</label>
+              <input id="start" type="date" name="trip-start" value="#" min="2022-01-01" max="2050-12-31"
+                placeholder="#" required>
+            </div>
+
+            <div class="input-box">
+              <label for="time">COOK TIME</label>
+              <input id="time" type="time" name="hour" placeholder="what's time?" required>
+            </div>
+
+            <div class="input-box">
+              <label for="Product">PRODUCT NAME</label>
+              <input id="product" type="text" name="product" placeholder="Product Name" required>
+            </div>
+
+            <div class="input-box">
+              <label for="qto">QUANTITY</label>
+              <input id="quantity" type="number" name="quantity" placeholder="Quantity" required>
+            </div>
+
+            <div class="input-box">
+              <label for="tentacles">TEMPERATURE</label>
+              <input id="tentacles" type="number" name="tentacles" placeholder="Temp" min="80" max="96" required>
+            </div>
+          </div>
+          <div class="continue-button">
+            <button><a href="#">SEND</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022 DeliHelpApp</p>
+  </footer>
+  <script src="/js/structure.js"></script>
+</body>
+
+</html>

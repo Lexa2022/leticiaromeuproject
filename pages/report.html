@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/utilities.css">
+  <title>Deli | Reports </title>
+</head>
+
+<body id="report-page">
+  <header class="report">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Deli Help</span>App
+      </h1>
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/books.html">Books</a></li>
+          <li><a href="/pages/antiallergen.html">Anti Allergen</a></li>
+          <li><a href="/pages/signup.html">Sign Up</a></li>
+          <li><a href="/pages/login.html">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section id="page-1" class="page">
+      <h1>Welcome to the report page</h1>
+      <p>Dear administrator, Here you can register new employees, register new products and access the completed books
+        with a simple click on the button below.</p>
+      <div>
+        <a href="#page-2" class="button-report">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+  </header>
+  <section id="page-2" class="page">
+    <h1>NEW USER REGISTRATION</h1>
+    <div class="container-login">
+      <div class="login-image">
+        <img src="/IMG/PHOTO.jpg" alt="User photo">
+      </div>
+      <div class="login">
+        <form action="#">
+          <div class="login-header">
+            <form action="#">
+              <div class="input-login">
+                <div class="input-box-login">
+                  <label for="username"></label>
+                  <input id="name" type="text" name="username" placeholder="User Name" required>
+                </div>
+
+                <div class="input-box-login">
+                  <label for="email"></label>
+                  <input id="email" type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-box-login">
+                  <label for="password"></label>
+                  <input id="PASSWORD" type="password" name="PASSWORD" placeholder="Password" required>
+                </div>
+                <div class="login-button">
+                  <button><a href="#">REGISTER</a></button>
+                </div>
+            </form>
+            <div>
+              <a href="#page-1" class="button-report">
+                Prev Page <i class="fas fa-arrow-circle-up"></i>
+              </a>
+              <a href="#page-3" class="button-report">
+                Next Page <i class="fas fa-arrow-circle-down"></i>
+              </a>
+            </div>
+  </section>
+
+  <!--Page 3-->
+  <section id="page-3" class="page btn-dark">
+    <h1>REGISTER NEW PRODUCTS</h1>
+    <div class="container-login">
+      <div class="login-image">
+        <img src="/IMG/pastries.jpg" alt="products">
+      </div>
+      <div class="login">
+        <form action="#">
+          <div class="login-header">
+            <form action="#">
+              <div class="input-login">
+                <div class="input-box-login">
+                  <label for="product one"></label>
+                  <input id="produt name" type="text" name="product one" placeholder="Enter product name" required>
+                </div>
+
+                <div class="input-box-login">
+                  <label for="product"></label>
+                  <input id="produt name" type="text" name="product one" placeholder="Enter product name">
+                </div>
+
+                <div class="input-box-login">
+                  <label for="product"></label>
+                  <input id="produt name" type="text" name="product one" placeholder="Enter product name">
+                </div>
+
+                <div class="input-box-login">
+                  <label for="product"></label>
+                  <input id="produt name" type="text" name="product one" placeholder="Enter product name">
+                </div>
+                <div class="login-button">
+                  <button><a href="#">REGISTER</a></button>
+                </div>
+            </form>
+            <div>
+              <a href="#page-2" class="button-report">
+                Prev Page <i class="fas fa-arrow-circle-up"></i>
+              </a>
+              <a href="#page-4" class="button-report">
+                Next Page <i class="fas fa-arrow-circle-down"></i>
+              </a>
+            </div>
+  </section>
+
+  <!--PAGE 4-->
+  <section id="page-4" class="page btn-dark">
+    <h1>CHECK LIST</h1>
+    <div class="container-books">
+      <div class="form-image">
+        <img src="/IMG/adm.jpg" alt="booksphoto">
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="input-group">
+            <div class="input-box">
+              <label for="date">DATE</label>
+              <input id="start" type="date" name="trip-start" value="#" min="2022-01-01" max="2050-12-31"
+                placeholder="#" required>
+            </div>
+
+            <div class="input-box">
+              <label for="time">COOK TIME</label>
+              <input action="#" id="time" type="time" name="hour" placeholder="what's time?">
+            </div>
+
+            <div class="input-box">
+              <label for="Product">PRODUCT NAME</label>
+              <input action="#" id="product" type="text" name="product" placeholder="Product Name" required>
+            </div>
+
+            <div class="input-box">
+              <label for="qto">QUANTITY</label>
+              <input action="#" id="quantity" type="number" name="quantity" placeholder="Quantity" required>
+            </div>
+
+            <div class="input-box">
+              <label for="tentacles">TEMPERATURE</label>
+              <input action="#" id="tentacles" type="number" name="tentacles" placeholder="Temp" min="80" max="96"
+                required>
+            </div>
+          </div>
+          <div class="continue-button">
+            <button action="#"><a href="#">DELETE</a></button>
+          </div>
+          <div>
+            <a href="#page-3" class="button-report">
+              Prev Page <i class="fas fa-arrow-circle-up"></i>
+            </a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022 DeliHelpApp</p>
+  </footer>
+  <!--<script type="text/javascript" th:src="@{/js/style.js}"></script>-->
+  <script type="text/javascript" src="/JS/structure.js"></script>
+
+</body>
+
+</html>
